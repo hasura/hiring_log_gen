@@ -32,7 +32,7 @@ changelog:
       - '^docs:'
       - '^test:'
 nfpms:
-- maintainer: NamVu <hasura@gmail.com>
+- maintainer: miguel <miguel@hasura.io>
   description: Log generator for technical challenges in hiring processes
   homepage: https://github.com/hasura/hiring_log_gen
   license: MIT
