@@ -7,8 +7,6 @@ assignees: miguelff
 
 ---
 
-:wave:, 
-
 ### Build a simple data pipeline
 
 You will need [docker](https://docs.docker.com/get-docker/) installed. The following [command](https://github.com/hasura/hiring_log_gen#usage)  generates log data:
@@ -35,7 +33,7 @@ The exercise consists of building a pipeline that would let us understand:
 * Provide a description of the solution, its trade-offs, and the compromises you made, in the form of a README.md, file in the repository, or 
 
 
-Bonus points:
+### Bonus points:
 
 * Simplicity
 * Presence of tests
@@ -44,5 +42,7 @@ Bonus points:
 * If you Identify the scalability challenges that the pipeline would face if we received 100x the volume of log data and some potential solutions.
 
 You have as much time as you want to solve the exercise, but don't aim at building the perfect solution, just one that's simple and good enough for the requirements described.
+
+When you are done, please send an email to [muskaan@hasura.io](mailto:muskaan@hasura.io) with a link to the solution. If you are creating a private repository for the solution, please also add @miguelff as a collaborator to it.
 
 Thank you for your time, looking forward to hearing back from you!
