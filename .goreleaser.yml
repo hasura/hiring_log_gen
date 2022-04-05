@@ -1,0 +1,41 @@
+# This is an example .goreleaser.yml file with some sane defaults.
+# Make sure to check the documentation at http://goreleaser.com
+before:
+  hooks:
+    # You may remove this if you don't use go modules.
+    - go mod download
+    # you may remove this if you don't need go generate
+    # - go generate ./...
+builds:
+  - binary: hiring_log_gen
+    id: hiring_log_gen
+    goos:
+    - linux
+    goarch:
+    - amd64
+    - arm64
+  - binary: hiring_log_gen_mac
+    id: hiring_log_gen_mac
+    goos:
+    - darwin
+    goarch:
+    - amd64
+    - arm64
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .Tag }}-next"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+nfpms:
+- maintainer: NamVu <hasura@gmail.com>
+  description: Log generator for technical challenges in hiring processes
+  homepage: https://github.com/hasura/hiring_log_gen
+  license: MIT
+  formats:
+  - deb
+  - apk
